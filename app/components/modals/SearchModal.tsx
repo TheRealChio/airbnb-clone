@@ -9,7 +9,6 @@ import Modal from "./Modal";
 import { Range } from "react-date-range";
 import CountrySelect, { CountrySelectValue } from "../inputs/CountrySelect";
 import { formatISO } from "date-fns";
-import { gu } from "date-fns/locale";
 import Heading from "../Heading";
 import Calendar from "../inputs/Calendar";
 import Counter from "../inputs/Counter";

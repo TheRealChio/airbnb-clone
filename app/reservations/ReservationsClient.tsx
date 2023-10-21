@@ -10,7 +10,6 @@ import { SafeReservation, SafeUser } from "../types";
 import Heading from "../components/Heading";
 import Container from "../components/Container";
 import ListingCard from "../components/listings/ListingCard";
-import { set } from "date-fns";
 
 interface ReservationsClientProps {
   reservations: SafeReservation[];
