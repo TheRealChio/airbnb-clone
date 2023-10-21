@@ -26,12 +26,24 @@ export default async function getListings(params: IListingsParams) {
 
     let query: any = {};
 
-    if (userId) query.userId = userId;
-    if (category) query.category = category;
-    if (roomCount) query.roomCount = { gte: +roomCount };
-    if (bathroomCount) query.bathroomCount = { gte: +bathroomCount };
-    if (guestCount) query.guestCount = { gte: +guestCount };
-    if (locationValue) query.locationValue = locationValue;
+    if (userId) {
+      query.userId = userId;
+    }
+    if (category) {
+      query.category = category;
+    }
+    if (roomCount) {
+      query.roomCount = { gte: +roomCount };
+    }
+    if (bathroomCount) {
+      query.bathroomCount = { gte: +bathroomCount };
+    }
+    if (guestCount) {
+      query.guestCount = { gte: +guestCount };
+    }
+    if (locationValue) {
+      query.locationValue = locationValue;
+    }
     if (startDate && endDate) {
       query.NOT = {
         reservations: {
